@@ -1,0 +1,11 @@
+{
+    "env": {
+        "PG_USER" : "postgres",
+        "PG_PASSWORD" : "msgbox23*",
+        "PG_DATABASE" : "BDVersatilWeb",
+        "PG_HOST": "jdbc:postgresql://localhost:5432/BDVersatilWeb",
+        "PG_PORT" : 5432,
+
+        "JWT_KEY": "z12a34q56-w65s43x21"
+    }
+}
