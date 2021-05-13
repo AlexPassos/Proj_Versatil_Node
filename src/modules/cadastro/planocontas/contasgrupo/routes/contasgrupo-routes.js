@@ -5,11 +5,11 @@ const router = express.Router();
 
 const controller = require('../controller/contasgrupo-controller');
 
-router.get('/versatilweb/listContasgrupo/:id', controller.getContasgrupo);
-router.get('/versatilweb/getConta/:id', controller.getConta);
-router.get('/versatilweb/getMaxCodigo/:id', controller.getMaxCodigo);
-router.post('/versatilweb/saveConta', controller.saveConta);
-router.post('/versatilweb/updateConta', controller.updateConta);
-router.delete('/versatilweb/deleteConta/:id', controller.deleteConta);
+router.get('/versatilweb/listGrupos/:id', controller.listGrupos);
+router.get('/versatilweb/getGrupo/:id', controller.getGrupo);
+router.get('/versatilweb/getMaxCodigoGrupo/:id', controller.getMaxCodigo);
+router.post('/versatilweb/saveGrupo', controller.saveGrupo);
+router.post('/versatilweb/updateGrupo', controller.updateGrupo);
+router.delete('/versatilweb/deleteGrupo/:id', controller.deleteGrupo);
 
 module.exports = router;

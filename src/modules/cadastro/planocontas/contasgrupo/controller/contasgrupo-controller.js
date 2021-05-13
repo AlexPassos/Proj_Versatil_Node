@@ -2,7 +2,7 @@
 
 const model = require('../../../../../../bin/modelLoader');
 
-exports.getContasgrupo = (req, res) => {
+exports.listGrupos = (req, res) => {
 
     const id = req.params.id;
 
@@ -23,7 +23,7 @@ exports.getContasgrupo = (req, res) => {
     });
 };
 
-exports.getConta = (req, res) => {
+exports.getGrupo = (req, res) => {
 
     const id = req.params.id;
 
@@ -67,7 +67,7 @@ exports.getMaxCodigo = (req, res) => {
     });
 };
 
-exports.saveConta = async (req, res) => {
+exports.saveGrupo = async (req, res) => {
     var sequelize = model.sequelize;
 
     const dados = req.body;
@@ -97,7 +97,7 @@ exports.saveConta = async (req, res) => {
     }
 };  
 
-exports.updateConta = async (req, res) => {
+exports.updateGrupo = async (req, res) => {
     var sequelize = model.sequelize;
 
     const dados = req.body;
@@ -128,7 +128,7 @@ exports.updateConta = async (req, res) => {
     }
 };  
 
-exports.deleteConta = async (req, res) => {
+exports.deleteGrupo = async (req, res) => {
     var sequelize = model.sequelize;
 
     const id = req.params.id;
